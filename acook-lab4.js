@@ -59,3 +59,9 @@
     let productCardsDiv = document.querySelector('div[data-section="product_cards"]');
     productCardsDiv.classList.add("lg:grid-cols-4");
 })();
+
+//10. Change the musicians image to the following
+(function() {
+    let newImageURL = "https://picsum.photos/id/453/400/300";
+    document.querySelector('img[alt="Musicians"]').src = newImageURL;
+})();
