@@ -19,3 +19,8 @@
     document.getElementById("hero").style.backgroundImage = `url(${imageUrl})`;
 })();
 
+//4. Change the background color of the nav bar to the same color that is used in the footer
+(function() {
+    let backgroundColorClass = document.getElementsByTagName('footer')[0].classList[0];
+    document.getElementsByTagName("header")[0].classList.replace("bg-blue-600", backgroundColorClass);
+})();
