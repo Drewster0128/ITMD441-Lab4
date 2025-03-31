@@ -13,3 +13,9 @@
     document.getElementsByTagName("p")[0].innerHTML = 'Utilize cutting-edge strategies from Stellar Marketing to help your business <b style="font-style: italic;">thrive</b> and <b style="font-style:italic;">excel</b>'
 })();
 
+//3. Change the image in the background to the one below:
+(function() {
+    let imageUrl = "https://picsum.photos/id/683/1280/720";
+    document.getElementById("hero").style.backgroundImage = `url(${imageUrl})`;
+})();
+
