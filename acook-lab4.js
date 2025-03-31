@@ -39,3 +39,12 @@
         sectionHeading.classList.add("text-center");
     });
 })();
+
+//7. In the services section change the icons color to #47C714
+(function() {
+    let color = "#47C714";
+    let serviceIcons = Array.from(document.getElementsByClassName("material-symbols-outlined"));
+    serviceIcons.map((icon) => {
+        icon.style.color(color);
+    });
+})();
