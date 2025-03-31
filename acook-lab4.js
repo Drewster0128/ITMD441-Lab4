@@ -24,3 +24,10 @@
     let backgroundColorClass = document.getElementsByTagName('footer')[0].classList[0];
     document.getElementsByTagName("header")[0].classList.replace("bg-blue-600", backgroundColorClass);
 })();
+
+//5. Remove the "Get Started" CTA from the hero.
+(function() {
+    let hero = document.getElementById("hero");
+    let cta = hero.getElementsByTagName("a")[0];
+    hero.removeChild(cta);
+})();
