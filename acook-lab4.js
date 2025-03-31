@@ -53,3 +53,9 @@
 (function() {
     document.getElementsByClassName("material-symbols-outlined")[0].innerText = "ads_click";
 })();
+
+//9. In the specialized marketing solution section make a change to the layout of the tiles so that at >= 1024px they are 4 across instead of 2 across
+(function() {
+    let productCardsDiv = document.querySelector('div[data-section="product_cards"]');
+    productCardsDiv.classList.add("lg:grid-cols-4");
+})();
