@@ -45,6 +45,11 @@
     let color = "#47C714";
     let serviceIcons = Array.from(document.getElementsByClassName("material-symbols-outlined"));
     serviceIcons.map((icon) => {
-        icon.style.color(color);
+        icon.style.color = color;
     });
+})();
+
+//8. Replace digital marketing icon to ads click
+(function() {
+    document.getElementsByClassName("material-symbols-outlined")[0].innerText = "ads_click";
 })();
