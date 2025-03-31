@@ -31,3 +31,11 @@
     let cta = hero.getElementsByTagName("a")[0];
     hero.removeChild(cta);
 })();
+
+//6. Center align the heading for services, solutions, and contact
+(function() {
+    let sectionHeadings = document.getElementsByTagName("h2");
+    Array.from(sectionHeadings).map((sectionHeading) => {
+        sectionHeading.classList.add("text-center");
+    });
+})();
